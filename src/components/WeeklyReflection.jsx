@@ -1,4 +1,3 @@
-```jsx
 import React, { useState } from 'react'
 
 function WeeklyReflection({ onAddReflection, reflections }) {
@@ -120,4 +119,3 @@ function WeeklyReflection({ onAddReflection, reflections }) {
 }
 
 export default WeeklyReflection
-```

@@ -1,6 +1,5 @@
-```jsx
 import React, { useEffect, useState } from 'react'
-import './App.css'
+import './index.css'
 
 import Dashboard from './components/Dashboard'
 import SessionLogger from './components/SessionLogger'
@@ -388,28 +387,3 @@ function App() {
 }
 
 export default App
-```
-
-### One important note
-
-I deliberately **didn't pretend this is full authentication**. Your `Auth` component can accept an email/password, but `App.jsx` currently doesn't verify the password against a database. It simply treats the login as successful.
-
-For a **school/project prototype**, that's fine. For a real deployed app, authentication should be moved to a proper auth service/backend.
-
-Also, your `App.jsx` depends on these files existing:
-
-```text
-src/
-├── App.jsx
-├── App.css
-└── components/
-    ├── Dashboard.jsx
-    ├── SessionLogger.jsx
-    ├── WeeklyReflection.jsx
-    ├── Settings.jsx
-    └── Auth.jsx
-```
-
-And because you're using classes like `bg-gray-900`, `text-cyan-400`, `flex`, `p-8`, etc., **Tailwind CSS needs to be configured in the project** for those styles to appear.
-
-If you're getting an error after pasting this, send me the **exact error message/screenshot** and I can pinpoint the next file that needs fixing.
